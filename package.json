@@ -1,0 +1,24 @@
+{
+  "name": "legit_portfolio",
+  "version": "1.0.0",
+  "description": "Here is my repo for my personal portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshromea/legit_portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joshromea/legit_portfolio/issues"
+  },
+  "homepage": "https://github.com/joshromea/legit_portfolio#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.2"
+  }
+}
