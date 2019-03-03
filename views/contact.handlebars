@@ -1,0 +1,36 @@
+{{!-- Form Code --}}
+<div class="jumbotron text-white" style="background-color:blue">
+    <form>
+        <div class="form-group">
+            <label for="FullNameInput">Your Name</label>
+            <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="David Bowie">
+        </div>
+
+        <div class="form-group">
+            <label for="EmailInput">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+
+        <div class="form-group">
+            <label for="MessageInput">Message</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+        </div>
+    </form>
+    <br>
+
+    {{!-- Links for Github, LinkedIN and my Resume --}}
+    <span>
+        <a href='/resume/JoshRomeaResume.DOCX' download>
+            <h6 style='color:white'>Click Here to download my Resume</h6>
+        </a>
+        <a href='https://www.linkedin.com/in/joshua-marius-romea-90a2b8168' target="_blank">
+            <img src='/images/linkedin.png' alt='linkedinlogo' width="100">
+        </a>
+        <a href='https://github.com/joshromea' target="_blank">
+            <img src='/images/GitHub-Mark.jpg' alt='githublogo' width="100" class='bg-light'>
+        </a>
+    </span>
+
+    {{!-- Button that doesn't do anything right now --}}
+    <button type="button" class="btn btn-light float-right">Submit</button>
+</div>

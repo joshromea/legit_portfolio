@@ -8,10 +8,10 @@ app.use(express.static('public'))
 app.use(express.urlencoded({ extended: true }))
 
 const hb = require('express-handlebars');
-app.engine('handlebars', hb({ defaultLayout: 'main' }));
+app.engine('handlebars', hb({ defaultLayout: 'main' }))
 app.set('view engine', 'handlebars');
 
-const routes = require('./routes/htmlRoutes');
+const routes = require('./routes/htmlRoutes')
 
 app.use(routes);
 

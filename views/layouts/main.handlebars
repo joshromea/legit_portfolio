@@ -5,24 +5,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     {{!-- Bootstrap CDN --}}
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
     {{!-- My CSS Stylesheet --}}
-    <link rel='stylesheet' href='/public/css/style.css'>
-    <title>Josh Romea Portofolio</title>
+    <link rel='text/stylesheet' href='/css/style.css'>
+    <title>Joshua Romea Portofolio</title>
 </head>
 
-<body>
+<body style='background-color:navajowhite'>
+
+    {{!-- Nav Bar Code --}}
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style='background-color:blue'>
+        <a class="navbar-brand" id='name' href="/">Joshua Marius Romea</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item" id='about-me-tag'>
+                    <a class="nav-link text-white" href="/about-me">About Me</a>
+                </li>
+                <li class="nav-item" id='portfolio-tag'>
+                    <a class="nav-link text-white" href="/portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item" id='contact-tag'>
+                    <a class="nav-link text-white" href="/contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <br>
 
 
+    <div class='container'>
 
+        {{{ body }}}
 
+    </div>
 
-
-
-
-
+    <br>
+    <br>
+    <!-- Footer -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-bottom" style='background-color:blue'>
+        <h7 class='ml-auto text-white' id='Footer-message'>Joshua Marius &copy; 2019</h7>
+    </nav>
 
     {{!-- Bootstrap JS Script --}}
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
